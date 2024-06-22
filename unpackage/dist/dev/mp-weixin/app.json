@@ -1,0 +1,25 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/my/my",
+    "pages/testLoading/testLoading"
+  ],
+  "subPackages": [
+    {
+      "root": "subpackages",
+      "pages": [
+        "test1/test1"
+      ]
+    }
+  ],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "uni-app",
+    "navigationBarBackgroundColor": "#F8F8F8",
+    "backgroundColor": "#F8F8F8"
+  },
+  "usingComponents": {
+    "cu-custom": "/components/cu-custom",
+    "header-nav": "/components/HeaderNav"
+  }
+}

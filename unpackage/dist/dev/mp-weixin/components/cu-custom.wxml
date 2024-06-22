@@ -1,0 +1,1 @@
+<view class="navbar" style="{{'padding-top:'+(safeAreaInsets.top+'px')+';'}}"><view class="logo"><text class="logo-title">DOS圆梦大家庭</text><text class="logo-text">诚挚缘分 成就梦想</text></view></view>
