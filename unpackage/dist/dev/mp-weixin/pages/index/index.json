@@ -1,4 +1,13 @@
 {
-  "navigationStyle": "custom",
-  "usingComponents": {}
+  "navigationBarBackgroundColor": "#9ec8fc",
+  "navigationBarTextStyle": "white",
+  "navigationBarTitleText": "标讯通",
+  "enablePullDownRefresh": true,
+  "usingComponents": {
+    "u-swiper": "/uni_modules/uview-ui/components/u-swiper/u-swiper",
+    "u-scroll-list": "/uni_modules/uview-ui/components/u-scroll-list/u-scroll-list",
+    "u-popup": "/uni_modules/uview-ui/components/u-popup/u-popup",
+    "u-toast": "/uni_modules/uview-ui/components/u-toast/u-toast",
+    "u-calendar": "/uni_modules/uview-ui/components/u-calendar/u-calendar"
+  }
 }

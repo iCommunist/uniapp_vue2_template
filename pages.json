@@ -6,7 +6,11 @@
 		{
 			"path": "pages/index/index",
 			"style": {
-				"navigationStyle": "custom"
+				// "navigationStyle": "custom",
+				"navigationBarBackgroundColor": "#9ec8fc",
+				"navigationBarTextStyle": "white",
+				"navigationBarTitleText": "标讯通",
+				"enablePullDownRefresh": true
 			}
 		},
 		{

@@ -132,9 +132,12 @@ var _default = {
   onLaunch: function onLaunch() {
     var custom = uni.getMenuButtonBoundingClientRect(); //获取右上角胶囊信息
     var system = uni.getSystemInfoSync(); //获取设备信息
+    console.log(custom);
+    console.log(system);
     this.deviceSysInfo = system;
     this.globalData.statusBarHeight = system.statusBarHeight + system.safeArea.top;
     this.globalData.capsuleTop = custom.top;
+    console.log(this.globalData);
   },
   onShow: function onShow() {
     console.log('App Show');

@@ -2,7 +2,7 @@
 	<view class="header-nav-box"
 		:style="{'height':Props.imgShow?'':Props.statusBarHeight+'px','background':Props.imgShow?'':Props.bgColor||'#9cf'}">
 		<!-- 是否使用图片背景 false -->
-		<image v-if="Props.imgShow||false" :src="imgUrl||'https://pic1.zhimg.com/70/v2-5e7547d016199cefb6bd0562621bbac1_1440w.avis?source=172ae18b&biz_tag=Post'" mode="scaleToFill"
+		<image v-if="Props.imgShow||false" :src="imgUrl||''" mode="scaleToFill"
 			style="width: 100%; height: 400rpx;" />
 		<!-- 导航内容 -->
 		<view class="nav-box-item" :style="{'top':Props.capsuleTop+'px','color':Props.textColor||'#FFF'}">
