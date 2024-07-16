@@ -14,6 +14,9 @@ Vue.component('cu-custom',cuCustom);
 // 注册全局组件
 import HeaderNav from "@/components/HeaderNav"
 Vue.component("HeaderNav", HeaderNav)
+//挂载tabbar组件于全局
+import Tabbar from '@/components/tabbar/tabbar.vue'
+Vue.component('view-tabbar', Tabbar)
 Vue.config.productionTip = false
 App.mpType = 'app'
 const app = new Vue({

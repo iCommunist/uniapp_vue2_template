@@ -14,18 +14,43 @@
 			}
 		},
 		{
-			"path": "pages/my/my",
+			"path": "pages/charts/charts",
 			"style": {
-				"navigationStyle": "custom",
-				"enablePullDownRefresh": false,
-				"navigationBarTitleText": "我的"
+				// "navigationStyle": "custom",
+				"navigationBarBackgroundColor": "#9ec8fc",
+				"navigationBarTextStyle": "white",
+				"navigationBarTitleText": "charts",
+				"enablePullDownRefresh": true
 			}
 		},
 		{
-			"path" : "pages/testLoading/testLoading",
-			"style" : 
-			{
-				"navigationBarTitleText" : "Loading"
+			"path": "pages/sendCode/sendCode",
+			"style": {
+				// "navigationStyle": "custom",
+				"navigationBarBackgroundColor": "#9ec8fc",
+				"navigationBarTextStyle": "white",
+				"navigationBarTitleText": "sendCode",
+				"enablePullDownRefresh": true
+			}
+		},
+		{
+			"path": "pages/addImg/addImg",
+			"style": {
+				// "navigationStyle": "custom",
+				"navigationBarBackgroundColor": "#9ec8fc",
+				"navigationBarTextStyle": "white",
+				"navigationBarTitleText": "addImg",
+				"enablePullDownRefresh": true
+			}
+		},
+		{
+			"path": "pages/my/my",
+			"style": {
+				// "navigationStyle": "custom",
+				"navigationBarBackgroundColor": "#9ec8fc",
+				"navigationBarTextStyle": "white",
+				"navigationBarTitleText": "my",
+				"enablePullDownRefresh": true
 			}
 		}
 	],
@@ -51,5 +76,47 @@
 		"navigationBarBackgroundColor": "#F8F8F8",
 		"backgroundColor": "#F8F8F8"
 	},
-	"uniIdRouter": {}
+	"uniIdRouter": {},
+	"tabBar": {
+	  // "custom": true,
+	  "color": "#333333",
+	  "selectedColor": "#6B1F72",
+	  "borderStyle": "white",
+	  "backgroundColor": "#ffffff",
+	  "list": [
+	    {
+	      "pagePath": "pages/index/index",
+	      "iconPath": "static/tabbar/icon_index.png",
+	      "selectedIconPath": "static/tabbar/icon_index_sel.png",
+	      "text": "首页"
+	    },
+	    {
+	      "pagePath": "pages/charts/charts",
+	      "iconPath": "static/tabbar/icon_order.png",
+	      "selectedIconPath": "static/tabbar/icon_order_sel.png",
+	      "text": "饼图"
+	    },
+		{
+		  "pagePath": "pages/my/my",
+		  "iconPath": "static/tabbar/icon_order.png",
+		  "selectedIconPath": "static/tabbar/icon_order_sel.png",
+		  "text": "饼图"
+		},
+	    {
+	      "pagePath": "pages/addImg/addImg",
+	      "iconPath": "static/tabbar/icon_safe.png",
+	      "selectedIconPath": "static/tabbar/icon_safe_sel.png",
+	      "text": "上传图片"
+	    },
+	    {
+	      "pagePath": "pages/sendCode/sendCode",
+	      "iconPath": "static/tabbar/icon_my.png",
+	      "selectedIconPath": "static/tabbar/icon_my_sel.png",
+	      "text": "验证码"
+	    }
+	  ]
+	},
+	"usingComponents": {
+	  // "navBar": "/components/navBar/navBar"
+	}
 }

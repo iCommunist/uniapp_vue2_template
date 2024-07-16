@@ -21,6 +21,9 @@
 			console.log(this.globalData)
 		},
 		onShow: function() {
+			uni.hideTabBar({
+				animation:false
+			})
 			console.log('App Show')
 		},
 		onHide: function() {

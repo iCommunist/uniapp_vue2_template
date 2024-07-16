@@ -1,0 +1,1 @@
+<view>addimg<button data-event-opts="{{[['tap',[['nav',['$event']]]]]}}" bindtap="__e">nav</button><view-tabbar vue-id="0f401640-1" tabIndex="{{2}}" bind:__l="__l"></view-tabbar></view>

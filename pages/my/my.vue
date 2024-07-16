@@ -1,16 +1,17 @@
 <template>
 	<view class="">
-		<view class="header-nav-box"
+		my
+		<!-- <view class="header-nav-box"
 			:style="{'height':Props.imgShow?'':(Props.statusBarHeight+Props.customHeight)+'px','background':Props.imgShow?'':Props.bgColor||'#9cf'}">
-			<!-- 是否使用图片背景 false -->
+			是否使用图片背景 false
 			<image v-if="Props.imgShow||false"
 				:src="imgUrl||'https://pic1.zhimg.com/70/v2-5e7547d016199cefb6bd0562621bbac1_1440w.avis?source=172ae18b&biz_tag=Post'"
 				mode="scaleToFill" style="width: 100%; height: 400rpx;" />
 			<video v-if="Props.videoIsShow||false" class="hide-progress-bar" src="https://www.runoob.com/try/demo_source/mov_bbb.mp4"
 				style="width:750rpx" autoplay="true" loop muted="true" controls></video>
-			<!-- 其余代码内容 -->
+			其余代码内容
 			
-			<!-- 导航内容 -->
+			导航内容
 			<view class="nav-box-item" :style="{'top':Props.capsuleTop+'px','color':Props.textColor||'#FFF'}">
 				<view class="back" v-if="Props.blackShow||true" @click="back">
 					<uni-icons type="back" size="18" :color="Props.iconColor||'#FFF'" />
@@ -20,13 +21,15 @@
 					<block>{{title||'默认标题'}}</block>
 				</view>
 			</view>
-			<!-- 自定义内容插槽 -->
+			自定义内容插槽
 			<slot name="content"></slot>
-			<!-- <u-button text="渐变色按钮" color="linear-gradient(to right, rgb(66, 83, 216), rgb(213, 51, 186))"></u-button> -->
-		</view>
-		<u-calendar :show="showCalendar" showLunar round="5" @close="close_u_calendar" @confirm="confirm_u_calendar"
+			<u-button text="渐变色按钮" color="linear-gradient(to right, rgb(66, 83, 216), rgb(213, 51, 186))"></u-button>
+		</view> -->
+		<view-tabbar :tabIndex="1"></view-tabbar>
+		<!-- <u-calendar :show="showCalendar" showLunar round="5" @close="close_u_calendar" @confirm="confirm_u_calendar"
 			show-confirm="true"></u-calendar>
-		<u-toast ref="myUToast" :z-index="999999"></u-toast>
+		<u-toast ref="myUToast" :z-index="999999"></u-toast> -->
+		
 	</view>
 </template>
 

@@ -1,9 +1,7 @@
 {
-  "navigationStyle": "custom",
-  "enablePullDownRefresh": false,
-  "navigationBarTitleText": "我的",
-  "usingComponents": {
-    "u-calendar": "/uni_modules/uview-ui/components/u-calendar/u-calendar",
-    "u-toast": "/uni_modules/uview-ui/components/u-toast/u-toast"
-  }
+  "navigationBarBackgroundColor": "#9ec8fc",
+  "navigationBarTextStyle": "white",
+  "navigationBarTitleText": "my",
+  "enablePullDownRefresh": true,
+  "usingComponents": {}
 }

@@ -1,0 +1,7 @@
+{
+  "navigationBarBackgroundColor": "#9ec8fc",
+  "navigationBarTextStyle": "white",
+  "navigationBarTitleText": "sendCode",
+  "enablePullDownRefresh": true,
+  "usingComponents": {}
+}

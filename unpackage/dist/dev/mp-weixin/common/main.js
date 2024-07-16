@@ -25,17 +25,24 @@ _vue.default.use(_uviewUi.default);
 // 此处为引用自定义顶部
 var cuCustom = function cuCustom() {
   __webpack_require__.e(/*! require.ensure | components/cu-custom */ "components/cu-custom").then((function () {
-    return resolve(__webpack_require__(/*! ./components/cu-custom.vue */ 197));
+    return resolve(__webpack_require__(/*! ./components/cu-custom.vue */ 204));
   }).bind(null, __webpack_require__)).catch(__webpack_require__.oe);
 };
 _vue.default.component('cu-custom', cuCustom);
 // 注册全局组件
 var HeaderNav = function HeaderNav() {
   __webpack_require__.e(/*! require.ensure | components/HeaderNav */ "components/HeaderNav").then((function () {
-    return resolve(__webpack_require__(/*! @/components/HeaderNav */ 204));
+    return resolve(__webpack_require__(/*! @/components/HeaderNav */ 211));
   }).bind(null, __webpack_require__)).catch(__webpack_require__.oe);
 };
 _vue.default.component("HeaderNav", HeaderNav);
+//挂载tabbar组件于全局
+var Tabbar = function Tabbar() {
+  __webpack_require__.e(/*! require.ensure | components/tabbar/tabbar */ "components/tabbar/tabbar").then((function () {
+    return resolve(__webpack_require__(/*! @/components/tabbar/tabbar.vue */ 186));
+  }).bind(null, __webpack_require__)).catch(__webpack_require__.oe);
+};
+_vue.default.component('view-tabbar', Tabbar);
 _vue.default.config.productionTip = false;
 _App.default.mpType = 'app';
 var app = new _vue.default(_objectSpread({}, _App.default));
@@ -140,6 +147,9 @@ var _default = {
     console.log(this.globalData);
   },
   onShow: function onShow() {
+    uni.hideTabBar({
+      animation: false
+    });
     console.log('App Show');
   },
   onHide: function onHide() {

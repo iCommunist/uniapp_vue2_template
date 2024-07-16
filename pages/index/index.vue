@@ -1,7 +1,8 @@
 <template>
 	<view id="container">
+		index
 		<!-- <HeaderNav :Props="Props" @black="black" :title="title" /> -->
-		<view class=""
+		<!-- <view class=""
 			style="width: 750rpx;height: 100vh;position: fixed;top: 0rpx; z-index: -1;background-image: linear-gradient(#9ec8fc, #f2f8ff);">
 		</view>
 		<view class="swiper_container">
@@ -27,12 +28,12 @@
 				</view>
 			</u-scroll-list>
 		</view>
-		<!-- <view class="subjec_status_container">
+		<view class="subjec_status_container">
 			<view class="subjec_status_item" v-for="(item,index) in projectStatus" :style="[{'backgroundColor':(currSelectSubjectStatus==index)?'#458ee6':'#fff'},
 				{'color':(currSelectSubjectStatus==index)?'#fff':'#000',}]" @click="clickSubjecStatus(index)">
 				{{item.label}}
 			</view>
-		</view> -->
+		</view>
 		<view class="screening_condition_container">
 			<view class="">
 				<view class="screening_condition_item" @click="clickSubjectStatus(index)" style="width: 120rpx;">
@@ -107,7 +108,9 @@
 		<u-toast ref="myUToast" :z-index="999999"></u-toast>
 		<u-calendar title="请选择开标日期" :defaultDate="defaultDateMultiple" :formatter="formatter" :show="showCalendar"
 			round="10" @close="showCalendar=false" monthNum="36" ref="calendar"
-			:minDate="getYesterdayDate()"></u-calendar>
+			:minDate="getYesterdayDate()"></u-calendar> -->
+		<view-tabbar :tabIndex="0"></view-tabbar>
+		<!-- <view class="tab-bar" v-show="showTabBar === true"></view> -->
 	</view>
 </template>
 <script>
